@@ -47,19 +47,11 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-sm md:text-lg text-gray-400 my-5 max-w-full md:max-w-[600px]"
         >
-          Je suis un développeur front-end passionné, spécialisé dans la
+          Je suis Nouredine Moussa, un développeur front-end passionné spécialisé dans la
           création de sites web modernes, interactifs et performants. Explorez
           mes projets pour découvrir mes compétences et réalisations.
         </motion.p>
 
-        {/* Bouton d'appel à l'action */}
-        <motion.a
-          variants={slideInFromLeft(1)}
-          href="#about"
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-full md:max-w-[200px]"
-        >
-          En savoir plus !
-        </motion.a>
       </div>
 
 

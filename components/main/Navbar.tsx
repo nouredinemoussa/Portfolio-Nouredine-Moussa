@@ -39,6 +39,7 @@ const Navbar = () => {
           isMenuOpen ? "flex" : "hidden"
         } md:flex flex-col md:flex-row items-center gap-10 bg-gray-900 md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto p-5 md:p-0 shadow-lg md:shadow-none`}
       >
+  
         <motion.div
           initial={{ x: 100 }}
           animate={{ x: 0 }}
@@ -48,7 +49,7 @@ const Navbar = () => {
           <Link
             href="#about"
             className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all"
-            onClick={() => setIsMenuOpen(false)} 
+            onClick={() => setIsMenuOpen(false)}
           >
             À propos
           </Link>
@@ -68,7 +69,6 @@ const Navbar = () => {
           </Link>
         </motion.div>
 
-
         <motion.div
           initial={{ x: 100 }}
           animate={{ x: 0 }}
@@ -78,14 +78,14 @@ const Navbar = () => {
           <Link
             href="https://github.com/nouredinemoussa"
             target="_blank"
-            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all"
+            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all flex items-center justify-center"
           >
             <RxGithubLogo size={30} />
           </Link>
           <Link
             href="https://www.linkedin.com/in/nouredine-moussa-b49057290"
             target="_blank"
-            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all"
+            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all flex items-center justify-center"
           >
             <RxLinkedinLogo size={30} />
           </Link>

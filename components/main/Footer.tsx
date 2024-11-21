@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]">
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-          {/* Section GitHub, LinkedIn, Email */}
+
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Contact</div>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">

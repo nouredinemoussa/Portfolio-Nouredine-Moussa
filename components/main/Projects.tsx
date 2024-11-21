@@ -8,24 +8,24 @@ const Projects = () => {
         Projets
       </h1>
 
-      {/* Grille de cartes avec un espacement optimal */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 px-4 w-full max-w-screen-xl mx-auto">
+
         {/* Cartes de projet */}
         <ProjectCard
           src="/screen_kasa.webp"
           title="Kasa"
-          description="J’ai conçu le front-end d’une application avec React et React Router."
+          description="Conception du front-end d’une application avec React et React Router."
           link="https://kasanouredinemoussa.vercel.app/"
         />
         <ProjectCard
           src="/screen_booki.webp"
           title="Booki"
-          description="J’ai créé une page d’accueil responsive pour une agence de voyage."
+          description="Création d'une page d’accueil responsive pour une agence de voyage."
           link="https://nouredinemoussa.github.io/Booki/"
         />
         <ProjectCard
           src="/screen_carducci.webp"
-          title="Portofolio de photographe"
+          title="Portofolio de Nina Carducci"
           description="Améliorations des performances d’un site avec Lighthouse."
           link="https://portfolio-nina-carducci-nouredinemoussa.vercel.app/"
         />

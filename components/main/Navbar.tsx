@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
-import { FiMenu, FiX } from "react-icons/fi"; // Import des icônes pour le menu
+import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      {/* Logo ou Titre */}
+  
       <motion.div
         initial={{ x: -100 }}
         animate={{ x: 0 }}
@@ -30,12 +30,10 @@ const Navbar = () => {
         <Link href="/">Portfolio</Link>
       </motion.div>
 
-      {/* Hamburger Menu */}
       <div className="md:hidden text-white text-2xl" onClick={toggleMenu}>
         {isMenuOpen ? <FiX /> : <FiMenu />}
       </div>
 
-      {/* Liens de navigation */}
       <div
         className={`${
           isMenuOpen ? "flex" : "hidden"
@@ -50,7 +48,7 @@ const Navbar = () => {
           <Link
             href="#about"
             className="hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all"
-            onClick={() => setIsMenuOpen(false)} // Ferme le menu après clic
+            onClick={() => setIsMenuOpen(false)} 
           >
             À propos
           </Link>
@@ -70,7 +68,7 @@ const Navbar = () => {
           </Link>
         </motion.div>
 
-        {/* Icônes des réseaux sociaux */}
+
         <motion.div
           initial={{ x: 100 }}
           animate={{ x: 0 }}
@@ -78,14 +76,14 @@ const Navbar = () => {
           className="flex gap-6 mt-5 md:mt-0"
         >
           <Link
-            href="https://github.com/your-username"
+            href="https://github.com/nouredinemoussa"
             target="_blank"
             className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all"
           >
             <RxGithubLogo size={30} />
           </Link>
           <Link
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/nouredine-moussa-b49057290"
             target="_blank"
             className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all"
           >

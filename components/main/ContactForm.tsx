@@ -42,7 +42,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-[90%] md:max-w-md mx-auto mt-10 bg-gray-800 p-6 md:p-8 rounded-lg shadow-lg">
+    <div id ="contact-form" className="w-full max-w-[90%] md:max-w-md mx-auto mt-10 bg-gray-800 p-6 md:p-8 rounded-lg shadow-lg">
       <h2 className="text-xl md:text-2xl font-bold text-white text-center mb-4 md:mb-6">
         Contactez-moi
       </h2>

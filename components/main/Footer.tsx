@@ -1,6 +1,6 @@
 import React from "react";
-import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx"; // Icônes pour GitHub et LinkedIn
-import { FaEnvelope } from "react-icons/fa"; // Icône pour l'email
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -44,7 +44,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="mb-[20px] text-[15px] text-center">
           &copy; Nouredine Moussa. Tous droits réservés
         </div>

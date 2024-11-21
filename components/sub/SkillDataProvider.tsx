@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";  // Optimisation avec Next.js Image
+import Image from "next/image";
 
 interface Props {
   src: string;
@@ -15,7 +15,7 @@ interface Props {
 const SkillDataProvider = ({ src, width, height, index }: Props) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.5, // Animation uniquement lorsque 50% de l'élément est visible
+    threshold: 0.5,
   });
 
   const imageVariants = {
@@ -23,7 +23,7 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
     visible: { opacity: 1 },
   };
 
-  const animationDelay = 0.3; // Délai d'animation global
+  const animationDelay = 0.3;
 
   return (
     <motion.div
@@ -39,8 +39,8 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
         width={width}
         height={height}
         alt="skill image"
-        priority={index < 5} // Prioriser les premières images pour de meilleures performances
-        layout="intrinsic"  // Utilisation de la taille naturelle de l'image
+        priority={index < 5}
+        layout="intrinsic"
       />
     </motion.div>
   );

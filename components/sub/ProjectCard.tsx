@@ -5,31 +5,46 @@ interface Props {
   src: string;
   title: string;
   description: string;
+  link: string;
 }
 
-const ProjectCard = ({ src, title, description }: Props) => {
-  if (!src || !title || !description) {
-    console.error('Invalid props in ProjectCard:', { src, title, description });
+const ProjectCard = ({ src, title, description, link }: Props) => {
+  if (!src || !title || !description || !link) {
+    console.error('Invalid props in ProjectCard:', { src, title, description, link });
   }
 
   return (
-    <div className="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mt-6 rounded-xl overflow-hidden shadow-lg border border-[#2A0E61]">
-      <div className="relative h-56">
-        <Image
-          src={src}
-          alt={title}
-          width={1000}
-          height={500}
-          className="w-full h-full object-cover"
-        />
+    // Lien enveloppant la carte
+    <a href={link} target="_blank" rel="noopener noreferrer" className="w-96">
+      <div className="card card-compact bg-base-100 shadow-xl rounded-xl transform transition-all duration-300 hover:scale-105 border border-[#2A0E61]">
+        {/* Section image */}
+        <figure className="relative w-full h-56">
+          <Image
+            src={src}
+            alt={title}
+            layout="fill"
+            objectFit="contain"
+            className="rounded-t-xl" // Cette classe arrondit le haut de l'image
+          />
+        </figure>
+
+        {/* Section corps de la carte */}
+        <div className="card-body p-4">
+          {/* Titre en blanc */}
+          <h2 className="card-title text-xl font-semibold text-white">{title}</h2>
+          {/* Description en blanc */}
+          <p className="text-sm text-white mt-2">{description}</p>
+
+          {/* Actions de la carte (ici un bouton pour le projet) */}
+          <div className="card-actions justify-end mt-4">
+            <button className="btn btn-primary bg-[#2A0E61] hover:bg-[#4B1F92] text-white">
+              Voir le projet
+            </button>
+          </div>
+        </div>
       </div>
-      <div className="p-4">
-        <h1 className="text-2xl font-semibold text-white">{title}</h1>
-        <p className="mt-2 text-sm text-gray-300">{description}</p>
-      </div>
-    </div>
+    </a>
   );
 };
-
 
 export default ProjectCard;

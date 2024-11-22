@@ -27,7 +27,7 @@ const Navbar = () => {
         transition={{ duration: 0.8 }}
         className="text-xl font-bold text-white"
       >
-        <Link href="/">Portfolio</Link>
+        <Link href="/">Nouredine Moussa</Link>
       </motion.div>
 
       <div className="md:hidden text-white text-2xl" onClick={toggleMenu}>
@@ -68,28 +68,43 @@ const Navbar = () => {
             Contact
           </Link>
         </motion.div>
-
         <motion.div
-          initial={{ x: 100 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex gap-6 mt-5 md:mt-0"
-        >
-          <Link
-            href="https://github.com/nouredinemoussa"
-            target="_blank"
-            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all flex items-center justify-center"
-          >
-            <RxGithubLogo size={30} />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/nouredine-moussa-b49057290"
-            target="_blank"
-            className="text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all flex items-center justify-center"
-          >
-            <RxLinkedinLogo size={30} />
-          </Link>
-        </motion.div>
+  initial={{ x: 100 }}
+  animate={{ x: 0 }}
+  transition={{ duration: 0.8 }}
+  className="flex gap-6 mt-5 md:mt-0"
+>
+
+  <Link
+    href="https://github.com/nouredinemoussa"
+    target="_blank"
+    className="flex items-center justify-center w-10 h-10 transition-all group relative"
+  >
+    <span
+      className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity rounded-full"
+    ></span>
+    <RxGithubLogo
+      size={30}
+      className="relative text-white transition-transform group-hover:scale-110"
+    />
+  </Link>
+
+  {/* Icône LinkedIn */}
+  <Link
+    href="https://www.linkedin.com/in/nouredine-moussa-b49057290"
+    target="_blank"
+    className="flex items-center justify-center w-10 h-10 transition-all group relative"
+  >
+    <span
+      className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity rounded-full"
+    ></span>
+    <RxLinkedinLogo
+      size={30}
+      className="relative text-white transition-transform group-hover:scale-110"
+    />
+  </Link>
+</motion.div>
+
       </div>
     </motion.nav>
   );

@@ -39,13 +39,6 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
           <h2 className="card-title text-xl font-semibold text-white">{title}</h2>
 
           <p className="text-sm text-white mt-2">{description}</p>
-
-
-          <div className="card-actions justify-end mt-4">
-            <button className="btn btn-primary bg-[#2A0E61] hover:bg-[#4B1F92] text-white">
-              Voir le projet
-            </button>
-          </div>
         </div>
       </div>
     </a>

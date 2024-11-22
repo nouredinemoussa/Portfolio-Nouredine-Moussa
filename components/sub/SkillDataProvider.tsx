@@ -10,9 +10,11 @@ interface Props {
   width: number;
   height: number;
   index: number;
+  alt: string;
 }
 
-const SkillDataProvider = ({ src, width, height, index }: Props) => {
+const SkillDataProvider = ({ src, width, height, index, alt }: Props) => {
+  console.log(src);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -38,7 +40,7 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
         src={src}
         width={width}
         height={height}
-        alt="skill image"
+        alt={alt}
         priority={index < 5}
         layout="intrinsic"
       />

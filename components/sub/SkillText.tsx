@@ -19,7 +19,7 @@ const SkillText = () => {
         variants={slideInFromLeft(0.5)}
         className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
       >
-        Voici les technologies avec lesquelles j'ai réalisé mes projets !
+        Voici les technologies avec lesquelles j&apos;ai réalisé mes projets !
       </motion.div>
     </div>
   );

@@ -6,7 +6,6 @@ import SkillDataProvider from "../sub/SkillDataProvider";
 import SkillText from "../sub/SkillText";
 
 const Skills = () => {
-  console.log(Skill_data);
   return (
     <section
       id="skills"

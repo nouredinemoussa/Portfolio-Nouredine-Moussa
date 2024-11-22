@@ -14,7 +14,7 @@ interface Props {
 }
 
 const SkillDataProvider = ({ src, width, height, index, alt }: Props) => {
-  console.log(src);
+
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,

@@ -35,10 +35,10 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`${
-          isMenuOpen ? "flex" : "hidden"
-        } md:flex flex-col md:flex-row items-center gap-10 bg-gray-900 md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto p-5 md:p-0 shadow-lg md:shadow-none`}
-      >
+  className={`${
+    isMenuOpen ? "flex" : "hidden"
+  } md:flex flex-col md:flex-row items-center gap-10 bg-[#06031a] md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto p-5 md:p-0 shadow-lg md:shadow-none`}
+>
   
         <motion.div
           initial={{ x: 100 }}
@@ -89,7 +89,7 @@ const Navbar = () => {
     />
   </Link>
 
-  {/* Icône LinkedIn */}
+  
   <Link
     href="https://www.linkedin.com/in/nouredine-moussa-b49057290"
     target="_blank"

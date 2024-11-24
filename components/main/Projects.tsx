@@ -10,7 +10,6 @@ const Projects = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 px-4 w-full max-w-screen-xl mx-auto">
 
-        {/* Cartes de projet */}
         <ProjectCard
           src="/screen_kasa.webp"
           title="Kasa"
@@ -26,13 +25,13 @@ const Projects = () => {
         <ProjectCard
           src="/screen_carducci.webp"
           title="Portofolio de Nina Carducci"
-          description="Améliorations des performances d’un site avec Lighthouse."
+          description="Améliorations des performances et du référencement d’un site avec Lighthouse."
           link="https://portfolio-nina-carducci-nouredinemoussa.vercel.app/"
         />
         <ProjectCard
           src="/screen_724.webp"
           title="724events"
-          description="Correction de bugs et validation d’un site one-page."
+          description="Correction de bugs et validation d’un site one-page avec React Dev Tools."
           link="https://724eventsnouredinemoussa.vercel.app/"
         />
         <ProjectCard

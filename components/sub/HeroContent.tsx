@@ -45,11 +45,9 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-sm md:text-lg text-gray-400 my-5 max-w-full md:max-w-[600px]"
+          className="text-sm md:text-lg text-white my-5 max-w-full md:max-w-[600px]"
         >
-          Je suis Nouredine Moussa, un développeur front-end passionné spécialisé dans la
-          création de sites web modernes, interactifs et performants. Explorez
-          mes projets pour découvrir mes compétences et réalisations.
+          Je suis Nouredine Moussa, un développeur front-end passionné, spécialisé dans la création de sites web modernes, interactifs et performants. Après avoir découvert le développement web par curiosité, j’ai suivi la formation Intégrateur Web d’OpenClassrooms. Ce site vous présente les compétences que j’y ai acquises
         </motion.p>
 
       </div>
